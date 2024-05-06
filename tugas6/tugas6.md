@@ -52,3 +52,26 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
    4. Web server kemudian mengirimkan halaman web tersebut kembali kepada browser yang melakukan permintaan.
    5. Selain mengirimkan konten, web server juga dapat menangani proses seperti otentikasi pengguna, penyimpanan sesi, atau log aktivitas.
 
+<h2>Perbedaan dan Peran Server Aplikasi dan Server Web:</h2>
+
+**Server Aplikasi:**
+1. **Protokol Lebih dari HTTP:** 
+   - Server aplikasi mampu bekerja dengan berbagai jenis protokol selain HTTP, memungkinkannya untuk menangani berbagai jenis program.
+2. **Fungsionalitas Tambahan:** 
+   - Selain menjalankan permintaan HTTP, server aplikasi menawarkan kemampuan tambahan yang memperluas fungsionalitasnya, seperti transaksi, personalisasi, dan layanan pesan.
+3. **Komponen Penting dalam Layanan:** 
+   - Server aplikasi seringkali mengintegrasikan server web sebagai bagian penting dari layanannya, memungkinkan untuk memberikan fitur tambahan dan menangani permintaan yang lebih kompleks.
+4. **Manajemen Situs Web yang Efektif:** 
+   - Dalam pengelolaan situs web, kombinasi antara server aplikasi dan server web sering memberikan hasil yang lebih baik, dengan server web menangani permintaan dasar dan konten statis, sementara server aplikasi menangani permintaan yang lebih dinamis.
+
+**Server Web:**
+1. **Fokus pada HTTP:** 
+   - Server web secara khusus menjalankan permintaan HTTP untuk menampilkan halaman web kepada pengguna.
+2. **Fungsi Utama Terbatas:** 
+   - Meskipun server web bisa menyediakan fitur tambahan seperti penyimpanan sementara, fungsinya utamanya adalah menjalankan permintaan HTTP untuk menampilkan halaman web.
+3. **Universal dalam Penyajian Konten:** 
+   - Server web menyajikan konten yang sama kepada pengguna tanpa memandang lokasi atau perangkat pengguna, memungkinkan pengguna mengakses halaman web dengan mudah.
+4. **Dukungan untuk Teknologi Adaptif:** 
+   - Meskipun server web dapat menyajikan konten statis dengan baik, halaman web dengan komponen adaptif biasanya didukung oleh teknologi lain selain server web.
+  
+<img src='docker.jpg'></img>
