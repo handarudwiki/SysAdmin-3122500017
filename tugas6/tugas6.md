@@ -37,7 +37,7 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
 
 <h2>Architecture Web Sever & Web Browser</h2>
 
-![](Aspose.Words.2bf98ad2-528c-4eba-af8c-bba84817ebb1.001.png)
+<img src='client_server.png'></img>
 
 1. **Web Browser:**
    1. Web browser adalah aplikasi perangkat lunak yang diinstal di perangkat pengguna seperti komputer, ponsel, atau tablet.
