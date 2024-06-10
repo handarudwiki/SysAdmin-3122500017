@@ -9,7 +9,7 @@ LAPORAN PRAKTIKUM WORKSHOP
 </p>
 
 <p align="center">
-    <img src="covernobg.png" alt="Cover Image" width="480" height="420">
+    <img src="asset/covernobg.png" alt="Cover Image" width="480" height="420">
 </p>
 
 <h4 align="center">
@@ -37,7 +37,7 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
 
 <h2>Architecture Web Sever & Web Browser</h2>
 
-<img src='client_server.png'></img>
+<img src='asset/client_server.png'></img>
 
 1. **Web Browser:**
    1. Web browser adalah aplikasi perangkat lunak yang diinstal di perangkat pengguna seperti komputer, ponsel, atau tablet.
@@ -53,7 +53,7 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
    5. Selain mengirimkan konten, web server juga dapat menangani proses seperti otentikasi pengguna, penyimpanan sesi, atau log aktivitas.
 
 <h2>Perbedaan dan Peran Server Aplikasi dan Server Web:</h2>
-<img src='docker.jpg'></img>
+<img src='asset/docker.jpg'></img>
 **Server Aplikasi:**
 1. **Protokol Lebih dari HTTP:** 
    - Server aplikasi mampu bekerja dengan berbagai jenis protokol selain HTTP, memungkinkannya untuk menangani berbagai jenis program.
@@ -79,11 +79,11 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
 
 Pertama tama jalankan perintah `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done` untuk menghapus package docker yang tidak diperlukan
 
-![docker](docker1.png)
+![docker](asset/docker1.png)
 
 Jalankan perintah `sudo apt-get update` untuk update debian dan jalankan untuk install docker engine `sudo apt-get install ca-certificates curl`
 
-![docker](docker2.png)
+![docker](asset/docker2.png)
 
 Lalu install keyrings untuk docker dengan command
 
@@ -99,45 +99,45 @@ dan juga add repository ke apt sources
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
       sudo apt-get update
 
-![docker](docker3.png)
+![docker](asset/docker3.png)
 
 Install Docker CE dengan perintah `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin` Lalu pilih yes semua
 
-![docker](docker4.png)
+![docker](asset/docker4.png)
 
 selesai instalasi, coba docker run hello world karena unnable fine, jadi otomatis akan pull
 
-![docker](docker5.png)
+![docker](asset/docker5.png)
 
 coba cek container dengan perintah `docker ps -a`
 
-![docker](docker6.png)
+![docker](asset/docker6.png)
 
 # Instalasi UPTIME-KUMA
 
 instalasi kuma dengan membuka dokumentasi di github nya uptime-kuma dan lakukan instalasi https://github.com/louislam/uptime-kuma
 
-![docker](docker7.png)
+![docker](asset/docker7.png)
 
 lalu setelah berhasil, coba buka dengan url `localhost:3001 `
 
-![docker](docker8.png)
+![docker](asset/docker8.png)
 
 # Monitoring 
 
 Pergi ke `sudo nano /var/lib/bind/db.kelompok4.local` tambahkan setingan monitoring seperti pada dibawah berikut:
 
-![monitoring](monitoring1.png)
+![monitoring](asset/monitoring1.png)
 
 Lalu jalankan perintah `sudo a2enmod` dan Masukkan Package berikut:
 `proxy proxy_ajp proxy_http rewrite deflate headers proxy_balancer proxy_connect proxy_html`
 
-![monitoring](monitoring2.png)
+![monitoring](asset/monitoring2.png)
 
 Pergi ke `sudo nano /etc/apache2/sites-enabled/000-default.conf` lalu konfigurasi seperti dibawah berikut:
 
-![monitoring](monitoring3.png)
+![monitoring](asset/monitoring3.png)
 
 Maka hasilnya akan seperti ini:
 
-![monitoring](monitoring4.png)
+![monitoring](asset/monitoring4.png)
